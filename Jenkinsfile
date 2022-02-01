@@ -16,7 +16,7 @@ pipeline {
 		stage('Build') {
 			steps {
 				echo "Build"
-				echo "$(ps waux)"
+				echo "${ps waux}"
 				sh 'mvn --version'
 			}
 		}
