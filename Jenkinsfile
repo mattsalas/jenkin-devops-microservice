@@ -15,7 +15,7 @@ pipeline {
 				echo "Build"
 				// sh 'mvn --version'
 				// sh 'hostname'
-				echo "$(HOSTNAME)"
+				echo $(HOSTNAME)
 			}
 		}
 		stage('Test') {
