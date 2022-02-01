@@ -13,8 +13,9 @@ pipeline {
 		stage('Build') {
 			steps {
 				echo "Build"
-				echo "${pwd}"
-				sh 'mvn --version'
+				// echo "${pwd}"
+				// sh 'mvn --version'
+				sh 'whoami'
 			}
 		}
 		stage('Test') {
