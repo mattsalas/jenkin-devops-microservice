@@ -8,7 +8,10 @@
 //DECLARATIVE PIPELINE
 pipeline {
 	// agent any
-	agent { docker { image 'maven' } }
+	agent { docker { 
+		image 'maven'
+		args "-u root" 
+		} }
 	stages {
 		stage('Build') {
 			steps {
