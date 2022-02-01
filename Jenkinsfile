@@ -17,6 +17,8 @@ pipeline {
 			steps {
 				echo "Build"
 				echo "${pwd}"
+				echo "${whoami}"
+				echo "${mvn --version}"
 				sh 'mvn --version'
 			}
 		}
