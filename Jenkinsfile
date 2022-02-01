@@ -5,7 +5,7 @@
 // 	echo "Integration Test"
 // }
 
-DECLARATIVE PIPELINE
+//DECLARATIVE PIPELINE
 pipeline {
 	// agent any
 	agent { docker { image 'maven' } }
