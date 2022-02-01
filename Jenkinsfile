@@ -8,16 +8,12 @@
 //DECLARATIVE PIPELINE
 pipeline {
 	// agent any
-	agent { docker { 
-		image 'maven'
-		args "-u root" 
-		} }
+	agent { docker { image 'maven' } }
 	stages {
 		stage('Build') {
 			steps {
 				echo "Build"
 				echo "${pwd}"
-				echo "${whoami}"
 				sh 'mvn --version'
 			}
 		}
